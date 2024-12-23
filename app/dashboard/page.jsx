@@ -8,7 +8,6 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-black p-8">
       <div className="max-w-6xl mx-auto">
-        {/* Back Button */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -23,8 +22,6 @@ export default function Dashboard() {
             Back to Portfolio
           </Link>
         </motion.div>
-
-        {/* Main Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

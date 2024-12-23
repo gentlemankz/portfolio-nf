@@ -7,6 +7,7 @@ import About from '@/components/Sections/About'
 import Skills from '@/components/Sections/Skills'
 import Projects from '@/components/Sections/Projects'
 import Contact from '@/components/Sections/Contact'
+import Gallup from '@/components/Sections/Gallup'
 
 const Scene = dynamic(() => import('@/components'), {
     ssr: false,
@@ -18,15 +19,13 @@ export default function Home() {
       <GradientBackground>
         <Navbar />
         <main>
-          {/* Hero Section with 3D Model */}
           <section className="h-screen relative">
             <div className="absolute inset-0 flex items-center justify-center">
               <Scene />
             </div>
           </section>
-          
-          {/* Other Sections */}
           <About />
+          <Gallup />
           <Skills />
           <Projects />
           <Contact />

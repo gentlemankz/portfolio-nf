@@ -8,14 +8,14 @@ const projects = [
     description: 'A modern portfolio website built with Next.js, Three.js, and TailwindCSS featuring interactive 3D elements and smooth animations.',
     tags: ['Next.js', 'Three.js', 'TailwindCSS', 'Framer Motion'],
     link: '#',
-    github: 'https://github.com/ShynggysZh/Portfolio'
+    github: 'https://github.com/gentlemankz/portfolio-nf'
   },
   {
     title: 'nFactorial Todo List',
     description: 'A feature-rich todo list application developed during nFactorial programming school. Includes task management, categories, and local storage.',
     tags: ['React', 'JavaScript', 'CSS', 'Local Storage'],
     link: 'https://todo-list-nfactorial.vercel.app/',
-    github: 'https://github.com/ShynggysZh/todo-list-nfactorial'
+    github: 'https://github.com/gentlemankz/nfactorial_todo'
   }
 ];
 
@@ -76,18 +76,6 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4 mt-4">
-                  {project.link && (
-                    <motion.a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-4 py-2 bg-violet-600 text-white rounded-md hover:bg-violet-700 transition-colors"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      View Project
-                    </motion.a>
-                  )}
                   {project.github && (
                     <motion.a
                       href={project.github}

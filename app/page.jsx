@@ -17,10 +17,15 @@ export default function Home() {
     <div className={styles.container}>
       <GradientBackground>
         <Navbar />
-        <main className="relative">
-          <section className="h-screen flex items-center justify-center">
-            <Scene />
+        <main>
+          {/* Hero Section with 3D Model */}
+          <section className="h-screen relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Scene />
+            </div>
           </section>
+          
+          {/* Other Sections */}
           <About />
           <Skills />
           <Projects />

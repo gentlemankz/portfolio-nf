@@ -25,7 +25,7 @@ export default function About() {
             variants={fadeInUp}
           >
             <p className="text-gray-300 text-lg leading-relaxed">
-              I am a passionate developer with a keen interest in creating beautiful and functional web experiences. 
+              Hi. My name is Shyngys, and I am a passionate developer with a keen interest in creating beautiful and functional web experiences. 
               My journey in web development has led me to work with modern technologies and frameworks, 
               always striving to build applications that not only look great but also provide exceptional user experience.
             </p>

@@ -13,8 +13,8 @@ export default function Model() {
     })
 
     const materialProps = {
-        thickness: 0.2,
-        roughness: 0,
+        thickness: 0.3,
+        roughness: 0.1,
         transmission: 1,
         ior: 1.2,
         chromaticAberration: 0.02,
@@ -23,10 +23,13 @@ export default function Model() {
     
     return (
         <group scale={viewport.width / 3.75} >
-            <Text font={'/fonts/PPNeueMontreal-Bold.otf'} position={[0, 0, -1]} fontSize={0.3} color="white" anchorX="center" anchorY="middle" textAlign="center">
-                I am Shynggys{'\n'}Welcome to my Portfolio!
+            <Text font={'/fonts/PPNeueMontreal-Bold.otf'} position={[0, 0.3, -1]} fontSize={0.7} color="white" anchorX="center" anchorY="middle" textAlign="center">
+                Welcome to
             </Text>
-            <mesh ref={torus} {...nodes.Torus002}>
+            <Text font={'/fonts/PPNeueMontreal-Bold.otf'} position={[0, -0.3, -1]} fontSize={0.4} color="white" anchorX="center" anchorY="middle" textAlign="center">
+                my portfolio
+            </Text>
+            <mesh ref={torus} {...nodes.Torus002} position={[0.2, 0.2, 0]} scale={0.95}>
                 <MeshTransmissionMaterial {...materialProps}/>
             </mesh>
         </group>

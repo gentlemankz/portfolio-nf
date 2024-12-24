@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer, slideInFromLeft } from '@/utils/animations';
 
+//для основных props
 const skills = [
   { name: 'React', level: 90 },
   { name: 'Next.js', level: 85 },

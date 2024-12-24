@@ -15,7 +15,7 @@ export default function Dashboard() {
           className="mb-8"
         >
           <Link
-            href="/"
+            href="/#gallup"
             className="inline-flex items-center text-white hover:text-violet-400 transition-colors"
           >
             <FaArrowLeft className="mr-2" />

@@ -9,6 +9,8 @@ export default function Index() {
     height: typeof window !== 'undefined' ? window.innerHeight : 0,
   });
 
+  /*сомнительно, но вроде нужно для aspect нужно юзать. Без него тоже работает
+  возможно для Arc браузера будет плюсом  */
   useEffect(() => {
     const handleResize = () => {
       setWindowSize({

@@ -7,6 +7,7 @@ export default function Gallup() {
 
   return (
     <motion.section
+      id="gallup"
       className=" text-center"
       initial="initial"
       whileInView="animate"

@@ -9,7 +9,7 @@ import Projects from '@/components/Sections/Projects'
 import Contact from '@/components/Sections/Contact'
 import Gallup from '@/components/Sections/Gallup'
 
-const Scene = dynamic(() => import('@/components/index'), {
+const Scene = dynamic(() => import('@/components/Index'), {
     ssr: false,
 })
 
